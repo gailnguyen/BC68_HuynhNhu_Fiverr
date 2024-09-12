@@ -1,0 +1,155 @@
+@import "../../styles/font.scss";
+@import "../../styles/helpers/variable";
+
+.popular_services,
+.freelance_talent,
+.about_fiverr {
+  font-family: "macan-regular";
+
+  .slick-slider button.slick-arrow {
+    color: $black;
+  }
+
+  h2 {
+    color: $dark-gray;
+    font-size: $fz-3;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-family: "macan-bold";
+    font-size: $fz-7;
+  }
+
+  h3 {
+    font-size: $fz-5;
+    color: $dark-gray;
+  }
+
+  p {
+    font-size: $fz-8;
+    color: $light-gray;
+  }
+}
+
+.fiverr_pro {
+  font-family: "macan-regular";
+
+  h2 {
+    font-size: $fz-3;
+    line-height: 1.2;
+
+    span {
+      font-weight: $fw-700;
+    }
+  }
+
+  p {
+    font-size: $fz-8;
+  }
+
+  ul li {
+    list-style: disc;
+  }
+
+  button {
+    background-color: $orange;
+  }
+}
+
+.about_fiverr {
+  .ant-carousel {
+    .slick-slider button.slick-arrow {
+      color: $black;
+    }
+
+    .slick-slide .about_fiverr_item {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      h5 {
+        font-family: "macan-semibold";
+        color: $light-gray;
+        font-size: $fz-6;
+        padding-bottom: 16px;
+      }
+
+      p {
+        font-family: "domaine-italic";
+        font-size: $fz-4;
+        color: $dark-green;
+      }
+    }
+  }
+
+  .fiverr_logo_maker {
+    background-color: $light-orange;
+    border-radius: 10px;
+
+    h2 {
+      line-height: 1;
+      span {
+        font-family: "domaine-regular";
+        color: $orange;
+      }
+    }
+
+    p {
+      font-family: "macan-regular";
+      font-size: $fz-6;
+    }
+
+    button {
+      font-family: "macan-semibold";
+      font-size: $fz-8;
+      background-color: $black;
+      &:hover {
+        background-color: $dark-gray;
+      }
+    }
+  }
+}
+
+.made_on_fiverr {
+  h2 {
+    color: $dark-gray;
+    font-size: $fz-3;
+    line-height: 1.2;
+  }
+
+  .card {
+    .card_info_layout {
+      background-color: linear-gradient(
+        180deg,
+        transparent,
+        transparent 37%,
+        rgba(0, 0, 0, 0.7)
+      );
+    }
+  }
+}
+
+.freelance_service {
+  background-color: #4d1727;
+
+  h2 {
+    color: $white;
+    font-size: $fz-2;
+
+    span {
+      font-family: "domaine-regular";
+      color: $orange;
+    }
+  }
+
+  button {
+    font-family: "macan-semibold";
+    font-size: $fz-8;
+    margin: 10px;
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+}

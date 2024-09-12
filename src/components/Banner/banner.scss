@@ -1,0 +1,59 @@
+@import "../../styles/font.scss";
+@import "../../styles/helpers/variable";
+
+.homepage_banner {
+  font-family: "macan-light";
+
+  .homepage_layout {
+    background-image: url(../../../public/image/banner_homepage.png);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    .homepage_content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h2 {
+        line-height: 1.2;
+        font-size: $fz-2;
+
+        span {
+          font-family: "domaine-regular";
+          color: $light-green;
+          font-weight: $fw-400;
+          font-size: $fz-1;
+        }
+      }
+    }
+
+    .homepage_trustedby {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.homepage_list {
+  .list_item {
+    &:hover {
+      background: radial-gradient(
+          63.44% 63.44% at 50% 50%,
+          #c2ffe2 0,
+          #fff 100%
+        ),
+        #fff;
+    }
+    h4 {
+      font-family: "macan-bold";
+      font-size: $fz-9;
+      color: $black;
+    }
+  }
+}

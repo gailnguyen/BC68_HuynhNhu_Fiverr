@@ -1,0 +1,15 @@
+@import "../../styles/font.scss";
+@import "../../styles/helpers/variable";
+
+footer {
+  h2 {
+    font-family: "macan-bold";
+    font-size: $fz-8;
+    color: $dark-gray;
+  }
+
+  li {
+    font-family: "macan-regular";
+    color: $light-gray;
+  }
+}

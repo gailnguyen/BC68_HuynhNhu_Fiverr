@@ -1,0 +1,85 @@
+@import "../../styles/font.scss";
+@import "../../styles/helpers/variable";
+
+.job_type {
+  font-family: "macan-regular";
+  color: $dark-gray;
+
+  .job_banner {
+    background-image: url("../../../public/image/job_type_page/background_banner.jpg");
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .job_carousel {
+    h4 {
+      font-size: $fz-5;
+      font-weight: $fw-600;
+    }
+
+    .ant-carousel .slick-list .slick-slide {
+      width: fit-content !important;
+
+      .item_layout {
+        box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.032),
+          0 0.37px 4.42626px rgba(0, 0, 0, 0.048), 0 3px 7px rgba(0, 0, 0, 0.09);
+
+        .item_text {
+          &:hover {
+            color: $light-green;
+            transition: all 0.5s;
+          }
+
+          h5 {
+            font-family: "macan-semibold";
+            font-size: $fz-8;
+          }
+
+          i {
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .job_explore {
+    h4 {
+      font-size: $fz-5;
+      font-weight: $fw-600;
+    }
+    h5 {
+      font-family: "macan-semibold";
+      font-size: $fz-6;
+    }
+
+    .job_detail {
+      color: $light-gray;
+      font-size: $fz-6;
+    }
+  }
+
+  .job_suggestion {
+    h4 {
+      font-size: $fz-5;
+      font-weight: $fw-600;
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      font-size: $fz-9;
+      color: $dark-gray;
+      font-weight: $fw-500;
+      padding: 4px 10px;
+      border-radius: 30px;
+      background-color: $lighter-gray;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
